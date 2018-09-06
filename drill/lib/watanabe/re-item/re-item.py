@@ -25,7 +25,7 @@ for a_tr in a1:
     pid,date,stockid,price,num = a_tr.split(',')
     pids.add(pid) 
     pid_trnum[pid] = pid_trnum.get(pid,0)+1
-    m=re.match(r"\[(.*)\]",stockid)
+    m=re.match(r"\{(.*)\}",stockid)
     sclist = m.group(1).split(";") if m else [stockid]
     for sc in sclist:
         item_pids[sc] = item_pids.get(sc,[])+[pid]
