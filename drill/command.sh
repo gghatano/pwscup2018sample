@@ -1,21 +1,22 @@
 #!/bin/bash
 
-bash ./clean.sh
+dir=$(dirname $0)
+bash $dir/clean.sh
 
 ##
-python3 defense.py
-python3 publish.py
-python3 offense.py
-python3 utility.py
-python3 security.py
+python3 $dir/defense.py
+python3 $dir/publish.py
+python3 $dir/offense.py
+python3 $dir/utility.py
+python3 $dir/security.py
 
 ##
-echo '[Utility]' > result.txt
-head data/out/utility/* >> result.txt
-echo '' >> result.txt
-echo '[Security]' >> result.txt
-head data/out/security/* >> result.txt
+echo '[Utility]' > $dir/result.txt
+head $dir/data/out/utility/* >> $dir/result.txt
+echo '' >> $dir/result.txt
+echo '[Security]' >> $dir/result.txt
+head $dir/data/out/security/* >> $dir/result.txt
 
 ##
-find . | grep \\.pyc$ | xargs rm -f
-find . | grep __pycache__$ | xargs rm -rf
+find $dir | grep \\.pyc$ | xargs rm -f
+find $dir | grep __pycache__$ | xargs rm -rf
