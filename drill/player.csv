@@ -1,0 +1,17 @@
+#### anonymization
+defense,hamada,ano-random,ruby ano-random.rb
+defense,hamada,ano-del-lc,python3 ano-del-lc.py 0.2
+
+## publish
+publish,hamada,pub,python3 pub.py
+
+## re-identification
+offense,hamada,re-uniq,ruby re-uniq.rb
+offense,hamada,re-1,python3 re-1.py
+offense,watanabe,re-item,python3 re-item.py
+
+## utility
+utility,hamada,ut-il,python3 ut-il.py
+
+## security
+security,hamada,sec-test,python3 sec-test.py
