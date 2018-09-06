@@ -1,4 +1,4 @@
-PWSCUP sample program
+PWSCUP2018 評価用スクリプト
 ===
 
 
