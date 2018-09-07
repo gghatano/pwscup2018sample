@@ -17,7 +17,7 @@ head data/out/utility/* >> result.txt
 echo '' >> result.txt
 echo '[Security]' >> result.txt
 head data/out/security/* >> result.txt
-cp result.txt data/
+mv result.txt data/
 
 ##
 find $dir | grep \\.pyc$ | xargs rm -f
