@@ -1,7 +1,7 @@
 #### anonymization
-defense,hamada,ano-random,ruby ano-random.rb
-defense,hamada,ano-del-lc,python3 ano-del-lc.py 0.2
-
+#defense,hamada,ano-random,ruby ano-random.rb
+#defense,hamada,ano-del-lc,python3 ano-del-lc.py 0.2
+defense,hamada,from-csv,sh a.sh ../../../data/A.csv
 ## publish
 publish,hamada,pub,python3 pub.py
 
